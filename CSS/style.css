@@ -150,10 +150,6 @@ section, .relative, .z-1 {
 }
 
 
-h1{
-    
-
-}
 nav{
     position: fixed;
     top: 0;
@@ -298,8 +294,8 @@ nav{
      20% { opacity: 1;  } 
      100% { transform: translate(-50%, -50%) scaleX(8) scaleY(3) rotate(120deg) skew(25deg);
          opacity: 0; 
-         filter: url(#fractal-shatter) contrast(150%) brightness(1.5) ); } }
-     }
+         filter: url(#fractal-shatter) contrast(150%) brightness(1.5); } }
+     
 /* 建立獨立的背層濾鏡，解決「霧感」問題 */
 .main-logo img {
 
@@ -328,6 +324,7 @@ nav{
     position: absolute;
     transition: transform 0.1s ease-out, opacity 0.1s ease-out;
     z-index: 3;
+    width: 30vw;
     
 }
 
